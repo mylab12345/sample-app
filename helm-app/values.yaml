@@ -1,0 +1,10 @@
+replicaCount: 1
+image:
+  repository: sample-devops-app
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30080
+resources: {}
